@@ -1,0 +1,34 @@
+[
+  {
+    "role": "scoreResource",
+    "name": "DS2Pkg_PythonWrapper.sas"
+  },
+  {
+    "role": "train",
+    "name": "gboost_train.py"
+  },
+  {
+    "role": "score",
+    "name": "gboost_score.py"
+  },
+  {
+    "role": "documentation",
+    "name": "requirements.txt"
+  },
+  {
+    "role": "python pickle",
+    "name": "gboost_V3_8_8.pkl"
+  },
+  {
+    "role": "scoreResource",
+    "name": "DS2EP_PythonWrapper.sas"
+  },
+  {
+    "role": "scoreResource",
+    "name": "example_test.py"
+  },
+  {
+    "role": "scoreResource",
+    "name": "settings.py"
+  }
+]
