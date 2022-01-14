@@ -1,0 +1,58 @@
+[
+  {
+    "level": "",
+    "name": "_leaf_id_",
+    "length": 8,
+    "description": "",
+    "type": "decimal"
+  },
+  {
+    "level": "",
+    "name": "_numval_",
+    "length": 8,
+    "description": "",
+    "type": "decimal"
+  },
+  {
+    "level": "",
+    "name": "EM_CLASSIFICATION",
+    "length": 12,
+    "description": "Into: Default",
+    "type": "string"
+  },
+  {
+    "level": "",
+    "name": "EM_EVENTPROBABILITY",
+    "length": 8,
+    "description": "Predicted: Default\u003d1",
+    "type": "decimal"
+  },
+  {
+    "level": "",
+    "name": "EM_PROBABILITY",
+    "length": 8,
+    "description": "Probability of Classification",
+    "type": "decimal"
+  },
+  {
+    "level": "",
+    "name": "I_Default",
+    "length": 12,
+    "description": "Into: Default",
+    "type": "string"
+  },
+  {
+    "level": "",
+    "name": "P_Default0",
+    "length": 8,
+    "description": "Predicted: Default\u003d0",
+    "type": "decimal"
+  },
+  {
+    "level": "",
+    "name": "P_Default1",
+    "length": 8,
+    "description": "Predicted: Default\u003d1",
+    "type": "decimal"
+  }
+]
