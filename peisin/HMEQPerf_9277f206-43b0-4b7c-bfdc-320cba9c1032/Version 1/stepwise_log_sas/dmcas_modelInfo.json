@@ -1,0 +1,7 @@
+{
+  "scoreType" : "DS1",
+  "algorithm" : "Logistic Regression",
+  "algorithmI18N" : "logistic.regression.node.name.txt",
+  "enableRegistration" : "true",
+  "enableScoring" : "true"
+}

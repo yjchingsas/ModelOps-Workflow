@@ -1,0 +1,60 @@
+{
+  "SASJSONExport" : "1.0 FMTCHARACTER",
+  "SASTableData+ARGUMENTS" : [ {
+    "name" : "Delinquencies",
+    "order" : 1,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "EM_CLASSIFICATION",
+    "order" : 2,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "C",
+    "vartype" : "char",
+    "format" : "",
+    "length" : 12
+  }, {
+    "name" : "EM_EVENTPROBABILITY",
+    "order" : 3,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "EM_PROBABILITY",
+    "order" : 4,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "I_Default",
+    "order" : 5,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "C",
+    "vartype" : "char",
+    "format" : "",
+    "length" : 12
+  }, {
+    "name" : "P_Default0",
+    "order" : 6,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "P_Default1",
+    "order" : 7,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  } ]
+}
