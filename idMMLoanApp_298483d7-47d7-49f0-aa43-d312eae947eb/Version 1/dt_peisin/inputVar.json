@@ -1,0 +1,23 @@
+[
+  {
+    "level": "interval",
+    "name": "CredLineAge",
+    "length": 8,
+    "description": "",
+    "type": "decimal"
+  },
+  {
+    "level": "nominal",
+    "name": "Delinquencies",
+    "length": 8,
+    "description": "",
+    "type": "decimal"
+  },
+  {
+    "level": "nominal",
+    "name": "DerogatoryMarks",
+    "length": 8,
+    "description": "",
+    "type": "decimal"
+  }
+]
