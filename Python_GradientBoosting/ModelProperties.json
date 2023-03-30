@@ -1,7 +1,7 @@
 {
    "creationTimeStamp": "2023-03-06T08:09:28.492Z",
    "createdBy": "YiJian.Ching@sas.com",
-   "modifiedTimeStamp": "2023-03-30T06:29:50.136Z",
+   "modifiedTimeStamp": "2023-03-30T09:56:04.581Z",
    "modifiedBy": "YiJian.Ching@sas.com",
    "id": "bded23e3-0744-4136-9f8b-205452133a61",
    "name": "Python GradientBoosting (Pipeline 1)",
@@ -16,8 +16,8 @@
    "targetLevel": "binary",
    "tool": "Model Studio",
    "toolVersion": "V2023.01",
-   "publishTimeStamp": 1680157785305,
+   "publishTimeStamp": 1680158518911,
    "externalModelId": "4a4bf000-3cb2-4ad7-a7d7-a2823f8a1691",
-   "modelVersionName": "3.0",
+   "modelVersionName": "4.0",
    "custom properties": []
 }
