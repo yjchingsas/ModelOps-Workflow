@@ -1,0 +1,249 @@
+{
+  "creationTimeStamp" : "0001-01-01T00:00:00Z",
+  "modifiedTimeStamp" : "0001-01-01T00:00:00Z",
+  "revision" : 0,
+  "name" : "paramests",
+  "version" : 0,
+  "order" : 0,
+  "parameterMap" : {
+    "AbsEstimate" : {
+      "label" : "Absolute Estimate",
+      "length" : 8,
+      "order" : 6,
+      "parameter" : "AbsEstimate",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "AbsEstimate" ]
+    },
+    "ChiSq" : {
+      "label" : "Chi-Square",
+      "length" : 8,
+      "order" : 8,
+      "parameter" : "ChiSq",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "ChiSq" ]
+    },
+    "DF" : {
+      "label" : "Degrees of Freedom",
+      "length" : 8,
+      "order" : 10,
+      "parameter" : "DF",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "DF" ]
+    },
+    "Effect" : {
+      "label" : "Effect",
+      "length" : 13,
+      "order" : 1,
+      "parameter" : "Effect",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "Effect" ]
+    },
+    "Estimate" : {
+      "label" : "Estimate",
+      "length" : 8,
+      "order" : 5,
+      "parameter" : "Estimate",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "Estimate" ]
+    },
+    "Parameter" : {
+      "label" : "Parameter",
+      "length" : 16,
+      "order" : 2,
+      "parameter" : "Parameter",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "Parameter" ]
+    },
+    "ProbChiSq" : {
+      "label" : "Pr > Chi-Square",
+      "length" : 8,
+      "order" : 9,
+      "parameter" : "ProbChiSq",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "ProbChiSq" ]
+    },
+    "StdErr" : {
+      "label" : "Standard Error",
+      "length" : 8,
+      "order" : 7,
+      "parameter" : "StdErr",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "StdErr" ]
+    },
+    "sign" : {
+      "label" : "Sign",
+      "length" : 1,
+      "order" : 4,
+      "parameter" : "sign",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "sign" ]
+    },
+    "tvalue" : {
+      "label" : "t Value",
+      "length" : 8,
+      "order" : 3,
+      "parameter" : "tvalue",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "tvalue" ]
+    }
+  },
+  "data" : [ {
+    "dataMap" : {
+      "AbsEstimate" : "13.6000699178",
+      "ChiSq" : "0.00340587194949",
+      "DF" : "1",
+      "Effect" : "Delinquencies",
+      "Estimate" : "-13.6000699178",
+      "Parameter" : "Delinquencies 0",
+      "ProbChiSq" : "0.953461996267",
+      "StdErr" : "233.038128137",
+      "sign" : "-",
+      "tvalue" : "0.0583598487789"
+    },
+    "rowNumber" : 1
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "13.3301154211",
+      "ChiSq" : "0.00327198282378",
+      "DF" : "1",
+      "Effect" : "Delinquencies",
+      "Estimate" : "-13.3301154211",
+      "Parameter" : "Delinquencies 3",
+      "ProbChiSq" : "0.954384883675",
+      "StdErr" : "233.038889592",
+      "sign" : "-",
+      "tvalue" : "0.057201248446"
+    },
+    "rowNumber" : 2
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "13.0424333487",
+      "ChiSq" : "0.00313229729894",
+      "DF" : "1",
+      "Effect" : "Delinquencies",
+      "Estimate" : "-13.0424333487",
+      "Parameter" : "Delinquencies 1",
+      "ProbChiSq" : "0.955368151566",
+      "StdErr" : "233.038211214",
+      "sign" : "-",
+      "tvalue" : "0.0559669304048"
+    },
+    "rowNumber" : 3
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "12.1551301537",
+      "ChiSq" : "0.00272058784201",
+      "DF" : "1",
+      "Effect" : "Delinquencies",
+      "Estimate" : "-12.1551301537",
+      "Parameter" : "Delinquencies 4",
+      "ProbChiSq" : "0.958401798821",
+      "StdErr" : "233.038800945",
+      "sign" : "-",
+      "tvalue" : "0.0521592546151"
+    },
+    "rowNumber" : 4
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "12.0810221815",
+      "ChiSq" : "0.00268752762433",
+      "DF" : "1",
+      "Effect" : "Delinquencies",
+      "Estimate" : "-12.0810221815",
+      "Parameter" : "Delinquencies 2",
+      "ProbChiSq" : "0.958655091506",
+      "StdErr" : "233.038251585",
+      "sign" : "-",
+      "tvalue" : "0.0518413698153"
+    },
+    "rowNumber" : 5
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "10.9023671852",
+      "ChiSq" : "0.00218870739771",
+      "DF" : "1",
+      "Effect" : "Intercept",
+      "Estimate" : "10.9023671852",
+      "Parameter" : "Intercept",
+      "ProbChiSq" : "0.962685681551",
+      "StdErr" : "233.038111298",
+      "sign" : "+",
+      "tvalue" : "0.0467836231785"
+    },
+    "rowNumber" : 6
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "10.0550693248",
+      "ChiSq" : "0.00186171169381",
+      "DF" : "1",
+      "Effect" : "Delinquencies",
+      "Estimate" : "-10.0550693248",
+      "Parameter" : "Delinquencies 5",
+      "ProbChiSq" : "0.965583909398",
+      "StdErr" : "233.039132996",
+      "sign" : "-",
+      "tvalue" : "0.0431475572172"
+    },
+    "rowNumber" : 7
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "4.10954575682e-9",
+      "ChiSq" : "2.48784732336e-22",
+      "DF" : "1",
+      "Effect" : "Delinquencies",
+      "Estimate" : "-4.10954575682e-9",
+      "Parameter" : "Delinquencies 6",
+      "ProbChiSq" : "0.999999999987",
+      "StdErr" : "260.544528947",
+      "sign" : "-",
+      "tvalue" : "1.57729113462e-11"
+    },
+    "rowNumber" : 8
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "4.26819175794e-9",
+      "ChiSq" : "2.23636498519e-22",
+      "DF" : "1",
+      "Effect" : "Delinquencies",
+      "Estimate" : "-4.26819175794e-9",
+      "Parameter" : "Delinquencies 7",
+      "ProbChiSq" : "0.999999999988",
+      "StdErr" : "285.412231355",
+      "sign" : "-",
+      "tvalue" : "1.49544808843e-11"
+    },
+    "rowNumber" : 9
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "0",
+      "DF" : "0",
+      "Effect" : "Delinquencies",
+      "Estimate" : "0",
+      "Parameter" : "Delinquencies 10",
+      "sign" : "+"
+    },
+    "rowNumber" : 10
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "0",
+      "DF" : "0",
+      "Effect" : "Delinquencies",
+      "Estimate" : "0",
+      "Parameter" : "Delinquencies 8",
+      "sign" : "+"
+    },
+    "rowNumber" : 11
+  } ],
+  "xInteger" : false,
+  "yInteger" : false
+}

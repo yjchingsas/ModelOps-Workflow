@@ -1,0 +1,62 @@
+[
+   {
+      "name": "EM_CLASSIFICATION",
+      "description": "Predicted for Default",
+      "role": "output",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 12
+   },
+   {
+      "name": "EM_EVENTPROBABILITY",
+      "description": "Probability for Default=1",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "EM_PROBABILITY",
+      "description": "Probability of Classification",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "I_Default",
+      "description": "Into: Default",
+      "role": "output",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 12
+   },
+   {
+      "name": "P_Default0",
+      "description": "Predicted: Default=0",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "P_Default1",
+      "description": "Predicted: Default=1",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   }
+]

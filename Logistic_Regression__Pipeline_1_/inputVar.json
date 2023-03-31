@@ -1,0 +1,12 @@
+[
+   {
+      "name": "Delinquencies",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "nominal",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   }
+]

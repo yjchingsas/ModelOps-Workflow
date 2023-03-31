@@ -1,0 +1,23 @@
+{
+   "creationTimeStamp": "2023-03-06T08:09:08.065Z",
+   "createdBy": "YiJian.Ching@sas.com",
+   "modifiedTimeStamp": "2023-03-29T09:59:47.520Z",
+   "modifiedBy": "YiJian.Ching@sas.com",
+   "id": "4e40ba67-1abe-4a6f-864b-8d1fe46a7003",
+   "name": "Logistic Regression (Pipeline 1)",
+   "scoreCodeType": "dataStep",
+   "algorithm": "logisticreg",
+   "function": "classification",
+   "modeler": "YiJian.Ching@sas.com",
+   "trainTable": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/IDMMHMEQ_CUSTID",
+   "eventProbVar": "P_Default1",
+   "targetVariable": "Default",
+   "targetEvent": "1",
+   "targetLevel": "binary",
+   "tool": "Model Studio",
+   "toolVersion": "V2023.01",
+   "publishTimeStamp": 1680083982831,
+   "externalModelId": "c9bd0443-21b1-4d59-a16a-e35185f55c36",
+   "modelVersionName": "2.0",
+   "custom properties": []
+}
