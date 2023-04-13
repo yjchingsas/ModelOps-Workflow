@@ -1,8 +1,8 @@
 
 
 ds2_options scond=none;
-/* Model Python GradientBoosting (Champion Challenger Pipeline) version 8.0 retrieved on Thu Apr 13 07:40:17 UTC 2023 */ 
-/* PACKAGE_START: packageName="Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41", referencedBy=Decision_6, name=Python GradientBoosting (Champion Challenger Pipeline), nodeId=c8e3e240-b837-4cf4-a7aa-5c3658f2125a, objectUri=/modelRepository/models/18a81ad7-db11-4470-8a0b-fc3d807efce2 */
+/* Model Python GradientBoosting (Champion Challenger Pipeline) version 1.0 retrieved on Thu Apr 13 08:01:13 UTC 2023 */ 
+/* PACKAGE_START: packageName="Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41", referencedBy=Decision_6, name=Python GradientBoosting (Champion Challenger Pipeline), nodeId=39d43de4-6147-4c37-b3e5-574c248768dd, objectUri=/modelRepository/models/7b7db85f-bc01-4d8b-9c39-2436c96f0b71 */
 package "Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41" / overwrite=yes;
 dcl package pymas pm;
 dcl package logger logr('App.MM.Python.DS2');
@@ -29,18 +29,18 @@ in_out varchar(100) "I_Default");
    resultCode = revision = 0;
    if null(pm) then do;
       pm = _new_ pymas();
-      resultCode = pm.useModule('model_exec_013c0f41-9aaf-46e0-ae78-0473773d806a', 1);
+      resultCode = pm.useModule('model_exec_59b1c773-32c4-4907-8208-effd980abed3', 1);
       if resultCode then do;
          resultCode = pm.appendSrcLine('import sys');
-         resultCode = pm.appendSrcLine('sys.path.append("/models/resources/viya/18a81ad7-db11-4470-8a0b-fc3d807efce2/")');
-         resultCode = pm.appendSrcLine('import settings_18a81ad7_db11_4470_8a0b_fc3d807efce2');
-         resultCode = pm.appendSrcLine('settings_18a81ad7_db11_4470_8a0b_fc3d807efce2.pickle_path = "/models/resources/viya/18a81ad7-db11-4470-8a0b-fc3d807efce2/"');
-         resultCode = pm.appendSrcLine('import _dj5n7wg1ne74bjo4ln9lur5fz_de305381_46ce_4bc4_92b7_649dcf8926fb');
+         resultCode = pm.appendSrcLine('sys.path.append("/models/resources/viya/7b7db85f-bc01-4d8b-9c39-2436c96f0b71/")');
+         resultCode = pm.appendSrcLine('import settings_7b7db85f_bc01_4d8b_9c39_2436c96f0b71');
+         resultCode = pm.appendSrcLine('settings_7b7db85f_bc01_4d8b_9c39_2436c96f0b71.pickle_path = "/models/resources/viya/7b7db85f-bc01-4d8b-9c39-2436c96f0b71/"');
+         resultCode = pm.appendSrcLine('import _dj5n7wg1ne74bjo4ln9lur5fz_adff1a79_48fd_447a_80bd_d97398e5da49');
          resultCode = pm.appendSrcLine('def score_method(Delinquencies, DerogatoryMarks, Inquiries, JobType, CredLineAge, CredLines, DebtIncRatio, LoanRequest, HomeValue, Income, LoanToValue, YearsOnJob):');
          resultCode = pm.appendSrcLine('    "Output: P_Default0, P_Default1, I_Default"');
-         resultCode = pm.appendSrcLine('    return _dj5n7wg1ne74bjo4ln9lur5fz_de305381_46ce_4bc4_92b7_649dcf8926fb.score_method(Delinquencies, DerogatoryMarks, Inquiries, JobType, CredLineAge, CredLines, DebtIncRatio, LoanRequest, HomeValue, Income, LoanToValue, YearsOnJob)');
+         resultCode = pm.appendSrcLine('    return _dj5n7wg1ne74bjo4ln9lur5fz_adff1a79_48fd_447a_80bd_d97398e5da49.score_method(Delinquencies, DerogatoryMarks, Inquiries, JobType, CredLineAge, CredLines, DebtIncRatio, LoanRequest, HomeValue, Income, LoanToValue, YearsOnJob)');
 
-         revision = pm.publish(pm.getSource(), 'model_exec_013c0f41-9aaf-46e0-ae78-0473773d806a');
+         revision = pm.publish(pm.getSource(), 'model_exec_59b1c773-32c4-4907-8208-effd980abed3');
          if ( revision < 1 ) then do;
             logr.log( 'e', 'py.publish() failed.');
             resultCode = -1;
@@ -107,7 +107,7 @@ endpackage;
   DS2_OPTIONS SCOND = WARNING;
   DS2_OPTIONS MISSING_NOTE;
 
-/* Decision Decision_6 version 1.0 generated on Thu Apr 13 07:40:17 UTC 2023 */
+/* Decision Decision_6 version 1.0 generated on Thu Apr 13 08:01:13 UTC 2023 */
 /* {PACKAGE_START} */
   package loanapp_scr  / inline;
     dcl package logger logr_perf('App.tk.SID.Perf');
@@ -151,7 +151,7 @@ endpackage;
         timer_start = datetime();
         "Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41_hdl".score("CredLineAge", "CredLines", "DebtIncRatio", "Delinquencies", "DerogatoryMarks", "HomeValue", "Income", "Inquiries", "JobType", "LoanRequest", "LoanToValue", "YearsOnJob", "resultCode", "P_Default0", "P_Default1", "I_Default");
         elapsed_time = datetime() - timer_start;
-        logr_perf.log( 'd', 'Package Name: loanapp_scr, Node Name: Python GradientBoosting (Champion Challenger Pipeline), Node ID: c8e3e240-b837-4cf4-a7aa-5c3658f2125a, NODE DURATION: ' .. elapsed_time);
+        logr_perf.log( 'd', 'Package Name: loanapp_scr, Node Name: Python GradientBoosting (Champion Challenger Pipeline), Node ID: 39d43de4-6147-4c37-b3e5-574c248768dd, NODE DURATION: ' .. elapsed_time);
 
 /*model code*/;
 
