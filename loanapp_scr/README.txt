@@ -1,0 +1,1 @@
+loanapp_scr published from /decisions/flows/248097cf-d3c6-4dc7-92c8-5dfdc3922644/revisions/21029aca-5b55-40e2-9f8a-aa7ea8499fc7 at 2023-04-13 07:40:29.343979341 +0000 UTC m=+680235.671255575 by YiJian.Ching@sas.com. Branch: main Tag: v2023.0413.1

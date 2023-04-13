@@ -1,0 +1,18 @@
+[
+    {
+        "id" : "18a81ad7-db11-4470-8a0b-fc3d807efce2",
+        "name" : "Python GradientBoosting (Champion Challenger Pipeline)",
+        "type" : "application/vnd.sas.models.model",
+        "versionName" : "",
+        "activeVersionReference" : false,
+        "referencingDecisions" : [
+            {
+                "id" : "248097cf-d3c6-4dc7-92c8-5dfdc3922644",
+                "name" : "Decision_6",
+                "versionId" : "21029aca-5b55-40e2-9f8a-aa7ea8499fc7"
+            }
+        ],
+        "customContext" : false,
+        "customContextMicroAnalytics" : false
+    }
+]

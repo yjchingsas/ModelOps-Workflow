@@ -1,0 +1,207 @@
+
+
+ds2_options scond=none;
+/* Model Python GradientBoosting (Champion Challenger Pipeline) version 8.0 retrieved on Thu Apr 13 07:40:17 UTC 2023 */ 
+/* PACKAGE_START: packageName="Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41", referencedBy=Decision_6, name=Python GradientBoosting (Champion Challenger Pipeline), nodeId=c8e3e240-b837-4cf4-a7aa-5c3658f2125a, objectUri=/modelRepository/models/18a81ad7-db11-4470-8a0b-fc3d807efce2 */
+package "Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41" / overwrite=yes;
+dcl package pymas pm;
+dcl package logger logr('App.MM.Python.DS2');
+dcl varchar(32767) character set utf8 pypgm;
+dcl int resultCode revision;
+
+method score(double "CredLineAge",
+double "CredLines",
+double "DebtIncRatio",
+double "Delinquencies",
+double "DerogatoryMarks",
+double "HomeValue",
+double "Income",
+double "Inquiries",
+varchar(100) "JobType",
+double "LoanRequest",
+double "LoanToValue",
+double "YearsOnJob",
+in_out double resultCode,
+in_out double "P_Default0",
+in_out double "P_Default1",
+in_out varchar(100) "I_Default");
+
+   resultCode = revision = 0;
+   if null(pm) then do;
+      pm = _new_ pymas();
+      resultCode = pm.useModule('model_exec_013c0f41-9aaf-46e0-ae78-0473773d806a', 1);
+      if resultCode then do;
+         resultCode = pm.appendSrcLine('import sys');
+         resultCode = pm.appendSrcLine('sys.path.append("/models/resources/viya/18a81ad7-db11-4470-8a0b-fc3d807efce2/")');
+         resultCode = pm.appendSrcLine('import settings_18a81ad7_db11_4470_8a0b_fc3d807efce2');
+         resultCode = pm.appendSrcLine('settings_18a81ad7_db11_4470_8a0b_fc3d807efce2.pickle_path = "/models/resources/viya/18a81ad7-db11-4470-8a0b-fc3d807efce2/"');
+         resultCode = pm.appendSrcLine('import _dj5n7wg1ne74bjo4ln9lur5fz_de305381_46ce_4bc4_92b7_649dcf8926fb');
+         resultCode = pm.appendSrcLine('def score_method(Delinquencies, DerogatoryMarks, Inquiries, JobType, CredLineAge, CredLines, DebtIncRatio, LoanRequest, HomeValue, Income, LoanToValue, YearsOnJob):');
+         resultCode = pm.appendSrcLine('    "Output: P_Default0, P_Default1, I_Default"');
+         resultCode = pm.appendSrcLine('    return _dj5n7wg1ne74bjo4ln9lur5fz_de305381_46ce_4bc4_92b7_649dcf8926fb.score_method(Delinquencies, DerogatoryMarks, Inquiries, JobType, CredLineAge, CredLines, DebtIncRatio, LoanRequest, HomeValue, Income, LoanToValue, YearsOnJob)');
+
+         revision = pm.publish(pm.getSource(), 'model_exec_013c0f41-9aaf-46e0-ae78-0473773d806a');
+         if ( revision < 1 ) then do;
+            logr.log( 'e', 'py.publish() failed.');
+            resultCode = -1;
+            return;
+         end;
+      end;
+   end;
+
+   resultCode = pm.useMethod('score_method');
+   if resultCode then do;
+      logr.log('E', 'useMethod() failed. resultCode=$s', resultCode);
+      return;
+   end;
+   resultCode = pm.setDouble('CredLineAge', CredLineAge);
+   if resultCode then
+      logr.log('E', 'setDouble for CredLineAge failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('CredLines', CredLines);
+   if resultCode then
+      logr.log('E', 'setDouble for CredLines failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('DebtIncRatio', DebtIncRatio);
+   if resultCode then
+      logr.log('E', 'setDouble for DebtIncRatio failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('Delinquencies', Delinquencies);
+   if resultCode then
+      logr.log('E', 'setDouble for Delinquencies failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('DerogatoryMarks', DerogatoryMarks);
+   if resultCode then
+      logr.log('E', 'setDouble for DerogatoryMarks failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('HomeValue', HomeValue);
+   if resultCode then
+      logr.log('E', 'setDouble for HomeValue failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('Income', Income);
+   if resultCode then
+      logr.log('E', 'setDouble for Income failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('Inquiries', Inquiries);
+   if resultCode then
+      logr.log('E', 'setDouble for Inquiries failed.  resultCode=$s', resultCode);
+   resultCode = pm.setString('JobType', JobType);
+   if resultCode then
+      logr.log('E', 'setString for JobType failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('LoanRequest', LoanRequest);
+   if resultCode then
+      logr.log('E', 'setDouble for LoanRequest failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('LoanToValue', LoanToValue);
+   if resultCode then
+      logr.log('E', 'setDouble for LoanToValue failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('YearsOnJob', YearsOnJob);
+   if resultCode then
+      logr.log('E', 'setDouble for YearsOnJob failed.  resultCode=$s', resultCode);
+   resultCode = pm.execute();
+   if (resultCode) then
+      logr.log('E', 'Error: pm.execute failed.  resultCode=$s', resultCode);
+   else do;
+      "P_Default0" = pm.getDouble('P_Default0');
+      "P_Default1" = pm.getDouble('P_Default1');
+      "I_Default" = pm.getString('I_Default');
+   end;
+end;
+
+/* PACKAGE_END: "Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41" */
+endpackage;
+
+  DS2_OPTIONS LOGICALEXPR = STANDARD;
+  DS2_OPTIONS SCOND = WARNING;
+  DS2_OPTIONS MISSING_NOTE;
+
+/* Decision Decision_6 version 1.0 generated on Thu Apr 13 07:40:17 UTC 2023 */
+/* {PACKAGE_START} */
+  package loanapp_scr  / inline;
+    dcl package logger logr_perf('App.tk.SID.Perf');
+    dcl double timer_start;
+    dcl double elapsed_time;
+    dcl double total_timer_start;
+    dcl double total_elapsed_time;
+
+    dcl package "Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41" "Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41_hdl"();
+
+     method init();
+
+     end;
+
+    method execute_internal(
+       double "CredLineAge"
+      ,double "CredLines"
+      ,double "DebtIncRatio"
+      ,double "Delinquencies"
+      ,double "DerogatoryMarks"
+      ,double "HomeValue"
+      ,double "Income"
+      ,double "Inquiries"
+      ,varchar(7) "JobType"
+      ,double "LoanRequest"
+      ,double "LoanToValue"
+      ,double "YearsOnJob"
+      ,in_out varchar "I_Default"
+      ,in_out double "P_Default0"
+      ,in_out double "P_Default1"
+
+      ,in_out integer "_filter_"
+
+    );
+        dcl integer dg_filter_;
+
+       dcl integer _masRC;
+
+        total_timer_start = datetime();
+
+        timer_start = datetime();
+        "Decision_6_Pythonu32GradientBoostingu32u40Championu32Challengeru32Pipelineu41_hdl".score("CredLineAge", "CredLines", "DebtIncRatio", "Delinquencies", "DerogatoryMarks", "HomeValue", "Income", "Inquiries", "JobType", "LoanRequest", "LoanToValue", "YearsOnJob", "resultCode", "P_Default0", "P_Default1", "I_Default");
+        elapsed_time = datetime() - timer_start;
+        logr_perf.log( 'd', 'Package Name: loanapp_scr, Node Name: Python GradientBoosting (Champion Challenger Pipeline), Node ID: c8e3e240-b837-4cf4-a7aa-5c3658f2125a, NODE DURATION: ' .. elapsed_time);
+
+/*model code*/;
+
+        "end":/*label for decision node link to flow end*/
+
+        total_elapsed_time = datetime() - total_timer_start;
+        logr_perf.log( 'd', 'Package Name: loanapp_scr, TOTAL DURATION: ' .. total_elapsed_time);
+
+     end;
+
+    method execute(
+       double "CredLineAge_"
+      ,double "CredLines_"
+      ,double "DebtIncRatio_"
+      ,double "Delinquencies_"
+      ,double "DerogatoryMarks_"
+      ,double "HomeValue_"
+      ,double "Income_"
+      ,double "Inquiries_"
+      ,varchar(7) "JobType_"
+      ,double "LoanRequest_"
+      ,double "LoanToValue_"
+      ,double "YearsOnJob_"
+      ,in_out varchar "I_Default"
+      ,in_out double "P_Default0"
+      ,in_out double "P_Default1"
+);
+
+      dcl integer _filter_;
+
+          execute_internal(
+          "CredLineAge_"
+         ,"CredLines_"
+         ,"DebtIncRatio_"
+         ,"Delinquencies_"
+         ,"DerogatoryMarks_"
+         ,"HomeValue_"
+         ,"Income_"
+         ,"Inquiries_"
+         ,"JobType_"
+         ,"LoanRequest_"
+         ,"LoanToValue_"
+         ,"YearsOnJob_"
+         ,"I_Default"
+         ,"P_Default0"
+         ,"P_Default1"
+      ,"_filter_"
+      );
+
+    end;
+
+/* {PACKAGE_END} */
+  endpackage;
