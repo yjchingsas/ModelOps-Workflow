@@ -1,0 +1,23 @@
+{
+   "creationTimeStamp": "2022-08-09T05:06:11.007Z",
+   "createdBy": "YiJian.Ching@sas.com",
+   "modifiedTimeStamp": "2023-04-17T05:15:55.686Z",
+   "modifiedBy": "YiJian.Ching@sas.com",
+   "id": "18a81ad7-db11-4470-8a0b-fc3d807efce2",
+   "name": "Python GradientBoosting (Champion Challenger Pipeline)",
+   "scoreCodeType": "python",
+   "algorithm": "opensrc",
+   "function": "classification",
+   "modeler": "YiJian.Ching@sas.com",
+   "trainTable": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/IDMMHMEQ_CUSTID",
+   "eventProbVar": "P_Default1",
+   "targetVariable": "Default",
+   "targetEvent": "1",
+   "targetLevel": "binary",
+   "tool": "Model Studio",
+   "toolVersion": "V2023.01",
+   "publishTimeStamp": 1681708442534,
+   "externalModelId": "e492f115-8116-4cdc-ac50-a89f3c97f64f",
+   "modelVersionName": "10.0",
+   "custom properties": []
+}
